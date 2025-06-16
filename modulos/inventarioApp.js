@@ -21,7 +21,7 @@ form?.addEventListener('submit', async (e) => {
 
 async function cargarInventarios() {
   const inventarios = await obtenerInventario();
-  const lista = document.getElementById('lista-inventarios');
+  const lista = document.getElementById('tabla-inventario');
   lista.innerHTML = '';
 
   inventarios.forEach(inventario => {
